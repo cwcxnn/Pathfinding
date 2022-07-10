@@ -22,7 +22,7 @@ path = []
 
 window = pygame.display.set_mode((w, w))
 pygame.display.set_caption("Pathfinder.")
-logo = pygame.image.load(r'C:\Users\Student Laptop\OneDrive - Stowe Valley Multi Academy Trust\1. Compsci NEA\3. NEA Programming Project\3.3 Developing the solution\main\Assets\search.png')
+logo = pygame.image.load('Assets\search.png')
 pygame.display.set_icon(logo)
 
 class SecondaryWindow(Tk):
@@ -39,7 +39,7 @@ class SecondaryWindow(Tk):
 
         self.title('Generation: Settings')
         self.geometry('325x164+375+258')
-        icon = PhotoImage(file = r'C:\Users\Student Laptop\OneDrive - Stowe Valley Multi Academy Trust\1. Compsci NEA\3. NEA Programming Project\3.3 Developing the solution\main\Assets\setting.png')
+        icon = PhotoImage(file = 'Assets\setting.png')
         self.iconphoto(False, icon)
         self.t = StringVar()
         self.a = StringVar()
@@ -120,7 +120,7 @@ class SecondaryWindow(Tk):
         infowin = Toplevel() # creates another window - different from Tk() 
         # Tk() window cannot call itself within its own class
         infowin.geometry('325x300+375+455') # dimension and placement
-        icon = PhotoImage(file = r'C:\Users\Student Laptop\OneDrive - Stowe Valley Multi Academy Trust\1. Compsci NEA\3. NEA Programming Project\3.3 Developing the solution\main\Assets\info.png') # get image
+        icon = PhotoImage(file = 'Assets\info.png') # get image
         infowin.iconphoto(False, icon) # adds window icon
         infowin.title('Algorithms: Info') # title of window
         Label(infowin, text='T')
